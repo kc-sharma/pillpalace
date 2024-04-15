@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PILLPALACE</title>
+    <link rel="stylesheet" href="stylesite.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font for cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- header file -->
+    <header class="header">
+
+        <div class="header-1">
+            <a href="#" id="logo" class="logo">
+                <img src="image/logo.png.jpeg" alt="">
+            </a>
+
+            <form action="" class="search-form" id="search-box2">
+                <input type="search" name="" placeholder="Search Here..." id="search-box" onkeyup="SearchBooks()">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#featured">specialist</a>
+                <a href="#arrivals">medicines</a>
+                <a href="#reviews">reviews</a>
+                <a href="#blogs">blogs</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Bottom navbar -->
+    <nav class="bottom-navbar">
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#featured" class="fas fa-list"></a>
+        <a href="#arrivals" class="fas fa-tags"></a>
+        <a href="#reviews" class="fas fa-comments"></a>
+        <a href="#blogs" class="fas fa-blog"></a>
+    </nav>
+
+    <!-- LOGIN FORM -->
+    <div class="login-form-container">
+        <div id="class-login-btn" class="fas fa-times"></div>
+
+        <form action="">
+            <h3>LOG IN</h3>
+            <span>username</span>
+            <input type="email" name="" required class="box" placeholder="Enter your email" id="">
+            <span>password</span>
+            <input type="password" name="" required class="box" placeholder="Enter your password" id="">
+
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+            <input type="submit" value="log in" class="btn">
+            <p>forgot password ?<a href="">click here</a></p>
+            <p>don't have an account ?<a id="create-btn">create one</a></p>
+        </form>
+    </div>
+
+    <!-- SIGN UP FORM -->
+    <div class="signup-form-container">
+        <div id="close-btn" class="fas fa-times"></div>
+
+        <form action="">
+            <h3>SIGN UP</h3>
+            <table>
+                <tr>
+                    <td> NAME </td>
+                    <td><input type="text" name="Name" required class="box1" maxlength="30"
+                            placeholder=" ENTER YOUR NAME "></td>
+                </tr>
+                <tr>
+                    <td> EMAIL </td>
+                    <td><input type="email" name="emailid" required class="box1" maxlength="50"
+                            placeholder="Enter your Email ID"></td>
+                </tr>
+                <tr>
+                    <td> PHONE </td>
+                    <td><input type="text" name="mobileno" required class="box1" maxlength="10"
+                            placeholder="Enter your Mobile no."></td>
+                </tr>
+                <tr>
+                    <td> GENDER </td>
+                    <td class="gender">
+                        <input type="radio" name="gender" value="MALE"> MALE
+                        <input type="radio" name="gender" value="FEMALE"> FEMALE
+                    </td>
+                </tr>
+                <tr>
+                    <td> DATE OF BIRTH (DOB) </td>
+                    <td class="dob">
+                        <select name="birthday" required id="birthday_day">
+                            <option value="0">DAY</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select name="birthmonth" required id="birth_month">
+                            <option value="0">MONTH</option>
+                            <option value="JANUARY">JAN</option>
+                            <option value="FEBRUARY">FEB</option>
+                            <option value="MARCH">MAR</option>
+                            <option value="APRIL">APR</option>
+                            <option value="MAY">MAY</option>
+                            <option value="JUNE">JUN</option>
+                            <option value="JULY">JUL</option>
+                            <option value="AUGUST">AUG</option>
+                            <option value="SEPTEMBER">SEP</option>
+                            <option value="OCTOBER">OCT</option>
+                            <option value="NOVEMBER">NOV</option>
+                            <option value="DECEMBER">DEC</option>
+                        </select>
+                        <select name="birthyear" required id="birth_year">
+                            <option value="0">YEAR</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                            <option value="1999">1999</option>
+                            <option value="1998">1998</option>
+                            <option value="1997">1997</option>
+                            <option value="1996">1996</option>
+                            <option value="1995">1995</option>
+                            <option value="1994">1994</option>
+                            <option value="1993">1993</option>
+                            <option value="1992">1992</option>
+                            <option value="1991">1991</option>
+                            <option value="1990">1990</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td> COUNTRY </td>
+                    <td><input type="text" name="country" value="INDIA" class="box1" readonly="readonly"></td>
+                </tr>
+                <tr>
+                    <td>PASSWORD</td>
+                    <td> <input type="password" name="password" required class="box1" placeholder="Enter your password"
+                            id=""></td>
+                </tr>
+                <tr>
+                    <td>CONFIRM PASSWORD</td>
+                    <td> <input type="password" name="password" required class="box1"
+                            placeholder="RE-Enter your password" id=""></td>
+                </tr>
+            </table>
+            <input type="submit" id="btn1" value="SUBMIT" class="btn1">
+            <input type="submit" id="btn2" value="BACK" class="btn1">
+        </form>
+    </div>
+
+    <!-- HOME SECTION -->
+    <section class="home" id="home">
+
+        <div class="row">
+
+            <div class="content">
+                <h3>upto 75% off</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet earum consequuntur, voluptas quo
+                    soluta molestias quam eaque ad, error, explicabo veniam itaque sapiente? Autem, tempora!</p>
+                <a href="#" class="btn">shop now</a>
+            </div>
+
+            <div class="swiper books-slider">
+                <div class="swiper-wrapper">
+                    <a href="#" id="book-1" class="swiper-slide"><img src="image/shampoo.jpeg.jpeg" alt=""></a>
+                    <a href="#" id="book-2" class="swiper-slide"><img src="image/hand-soap.jpeg.jpeg" alt=""></a>
+                    <a href="#" id="book-3" class="swiper-slide"><img src="image/moisturiser.jpg.jpeg" alt=""></a>
+                    <a href="#" id="book-4" class="swiper-slide"><img src="image/tooth-brush.jpg.jpeg" alt=""></a>
+                    <a href="#" id="book-5" class="swiper-slide"><img src="image/tooth-paste.png.jpeg" alt=""></a>
+                    <a href="#" id="book-6" class="swiper-slide"><img src="image/baby-care.jpeg.jpeg" alt=""></a>
+                    <a href="#" id="book-7" class="swiper-slide"><img src="image/pregnant-lady.jpeg.jpeg" alt=""></a>
+                    <a href="#" id="book-8" class="swiper-slide"><img src="image/medicine.jpeg" alt=""></a>
+                    <a href="#" id="book-9" class="swiper-slide"><img src="image/doctor.png.jpeg" alt=""></a>
+                    <a href="#" id="book-10" class="swiper-slide"><img src="image/oxymeter.jpeg.jpeg" alt=""></a>
+                </div>
+                <img src="stand-3.jpg" class="stand" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- READ ONLY SECTION  -->
+
+    <section class="Read-only-books1">
+        <div id="close-read-btn1" class="fas fa-times"></div>
+        <div class="book1-content" id="book1-content">
+            <h3>SHAMPOO</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro debitis possimus, fugit ipsum sunt qui
+                alias totam consequatur molestias veniam omnis et nostrum corporis ratione exercitationem iure odit
+                voluptates quibusdam placeat adipisci nobis corrupti tempore. Eveniet quis dolorum consequatur tempore
+                eos, enim obcaecati quidem error at minima mollitia modi distinctio.</p>
+            <span>
+                <input type="submit" value="Add to cart" id="book1-btn1" class="book-btn">
+                <input type="submit" value="Add to favourites" id="book1-btn2" class="book-btn">
+                <input type="submit" value="Back" id="book1-btn3" class="book-btn">
+            </span>
+            <img src="image/shampoo.jpeg.jpeg" alt="0">
+        </div>
+    </section>
+
+    <section class="Read-only-books2">
+        <div id="close-read-btn2" class="fas fa-times"></div>
+        <div class="book2-content" id="book2-content">
+            <h3>HAND SOAP</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro debitis possimus, fugit ipsum sunt qui
+                alias totam consequatur molestias veniam omnis et nostrum corporis ratione exercitationem iure odit
+                voluptates quibusdam placeat adipisci nobis corrupti tempore. Eveniet quis dolorum consequatur tempore
+                eos, enim obcaecati quidem error at minima mollitia modi distinctio.</p>
+            <span>
+                <input type="submit" value="Add to cart" id="book2-btn1" class="book-btn">
+                <input type="submit" value="Add to favourites" id="book2-btn2" class="book-btn">
+                <input type="submit" value="Back" id="book2-btn3" class="book-btn">
+            </span>
+            <img src="image/hand-soap.jpeg.jpeg" alt="0">
+        </div>
+    </section>
+
+    <section class="Read-only-books3">
+        <div id="close-read-btn3" class="fas fa-times"></div>
+        <div class="book3-content" id="book3-content">
+            <h3>MOISTURISER</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro debitis possimus, fugit ipsum sunt qui
+                alias totam consequatur molestias veniam omnis et nostrum corporis ratione exercitationem iure odit
+                voluptates quibusdam placeat adipisci nobis corrupti tempore. Eveniet quis dolorum consequatur tempore
+                eos, enim obcaecati quidem error at minima mollitia modi distinctio.</p>
+            <span>
+                <input type="submit" value="Add to cart" id="book3-btn1" class="book-btn">
+                <input type="submit" value="Add to favourites" id="book3-btn2" class="book-btn">
+                <input type="submit" value="Back" id="book3-btn3" class="book-btn">
+            </span>
+            <img src="image/moisturiser.jpg.jpeg" alt="0">
+        </div>
+    </section>
+
+    <section class="Read-only-books4">
+        <div id="close-read-btn4" class="fas fa-times"></div>
+        <div class="book4-content" id="book4-content">
+            <h3>TOOTH BRUSH</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro debitis possimus, fugit ipsum sunt qui
+                alias totam consequatur molestias veniam omnis et nostrum corporis ratione exercitationem iure odit
+                voluptates quibusdam placeat adipisci nobis corrupti tempore. Eveniet quis dolorum consequatur tempore
+                eos, enim obcaecati quidem error at minima mollitia modi distinctio.</p>
+            <span>
+                <input type="submit" value="Add to cart" id="book4-btn1" class="book-btn">
+                <input type="submit" value="Add to favourites" id="book4-btn2" class="book-btn">
+                <input type="submit" value="Back" id="book4-btn3" class="book-btn">
+            </span>
+            <img src="image/tooth-brush.jpg.jpeg" alt="0">
+        </div>
+    </section>
+
+    <section class="Read-only-books5">
+        <div id="close-read-btn5" class="fas fa-times"></div>
+        <div class="book5-content" id="book5-content">
+            <h3>TOOTH PASTE</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro debitis possimus, fugit ipsum sunt qui
+                alias totam consequatur molestias veniam omnis et nostrum corporis ratione exercitationem iure odit
+                voluptates quibusdam placeat adipisci nobis corrupti tempore. Eveniet quis dolorum consequatur tempore
+                eos, enim obcaecati quidem error at minima mollitia modi distinctio.</p>
+            <span>
+                <input type="submit" value="Add to cart" id="book5-btn1" class="book-btn">
+                <input type="submit" value="Add to favourites" id="book5-btn2" class="book-btn">
+                <input type="submit" value="Back" id="book5-btn3" class="book-btn">
+            </span>
+            <img src="image/tooth-paste.png.jpeg" alt="0">
+        </div>
+    </section>
+
+    <section class="Read-only-books6">
+        <div id="close-read-btn6" class="fas fa-times"></div>
+        <div class="book6-content" id="book6-content">
+            <h3>BABY CARE</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro debitis possimus, fugit ipsum sunt qui
+                alias totam consequatur molestias veniam omnis et nostrum corporis ratione exercitationem iure odit
+                voluptates quibusdam placeat adipisci nobis corrupti tempore. Eveniet quis dolorum consequatur tempore
+                eos, enim obcaecati quidem error at minima mollitia modi distinctio.</p>
+            <span>
+                <input type="submit" value="Add to cart" id="book6-btn1" class="book-btn">
+                <input type="submit" value="Add to favourites" id="book6-btn2" class="book-btn">
+                <input type="submit" value="Back" id="book6-btn3" class="book-btn">
+            </span>
+            <img src="image/baby-care.jpeg.jpeg" alt="0">
+        </div>
+    </section>
+
+    <section class="Read-only-books7">
+        <div id="close-read-btn7" class="fas fa-times"></div>
+        <div class="book7-content" id="book7-content">
+            <h3>MOTHER CARE</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro debitis possimus, fugit ipsum sunt qui
+                alias totam consequatur molestias veniam omnis et nostrum corporis ratione exercitationem iure odit
+                voluptates quibusdam placeat adipisci nobis corrupti tempore. Eveniet quis dolorum consequatur tempore
+                eos, enim obcaecati quidem error at minima mollitia modi distinctio.</p>
+            <span>
+                <input type="submit" value="Add to cart" id="book7-btn1" class="book-btn">
+                <input type="submit" value="Add to favourites" id="book7-btn2" class="book-btn">
+                <input type="submit" value="Back" id="book7-btn3" class="book-btn">
+            </span>
+            <img src="image/pregnant-lady.jpeg.jpeg" alt="0">
+        </div>
+    </section>
+
+    <section class="Read-only-books8">
+        <div id="close-read-btn8" class="fas fa-times"></div>
+        <div class="book8-content" id="book8-content">
+            <h3>MEDICINES</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro debitis possimus, fugit ipsum sunt qui
+                alias totam consequatur molestias veniam omnis et nostrum corporis ratione exercitationem iure odit
+                voluptates quibusdam placeat adipisci nobis corrupti tempore. Eveniet quis dolorum consequatur tempore
+                eos, enim obcaecati quidem error at minima mollitia modi distinctio.</p>
+            <span>
+                <input type="submit" value="Add to cart" id="book8-btn1" class="book-btn">
+                <input type="submit" value="Add to favourites" id="book8-btn2" class="book-btn">
+                <input type="submit" value="Back" id="book8-btn3" class="book-btn">
+            </span>
+            <img src="image/medicine.jpeg" alt="0">
+        </div>
+    </section>
+
+    <section class="Read-only-books9">
+        <div id="close-read-btn9" class="fas fa-times"></div>
+        <div class="book9-content" id="book9-content">
+            <h3>SPECIALIZED DOCTORS</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro debitis possimus, fugit ipsum sunt qui
+                alias totam consequatur molestias veniam omnis et nostrum corporis ratione exercitationem iure odit
+                voluptates quibusdam placeat adipisci nobis corrupti tempore. Eveniet quis dolorum consequatur tempore
+                eos, enim obcaecati quidem error at minima mollitia modi distinctio.</p>
+            <span>
+                <input type="submit" value="Add to cart" id="book9-btn1" class="book-btn">
+                <input type="submit" value="Add to favourites" id="book9-btn2" class="book-btn">
+                <input type="submit" value="Back" id="book9-btn3" class="book-btn">
+            </span>
+            <img src="image/doctor.png.jpeg" alt="0">
+        </div>
+    </section>
+
+    <section class="Read-only-books10">
+        <div id="close-read-btn10" class="fas fa-times"></div>
+        <div class="book10-content" id="book10-content">
+            <h3>MEDICAL PRODUCTS</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro debitis possimus, fugit ipsum sunt qui
+                alias totam consequatur molestias veniam omnis et nostrum corporis ratione exercitationem iure odit
+                voluptates quibusdam placeat adipisci nobis corrupti tempore. Eveniet quis dolorum consequatur tempore
+                eos, enim obcaecati quidem error at minima mollitia modi distinctio.</p>
+            <span>
+                <input type="submit" value="Add to cart" id="book10-btn1" class="book-btn">
+                <input type="submit" value="Add to favourites" id="book10-btn2" class="book-btn">
+                <input type="submit" value="Back" id="book10-btn3" class="book-btn">
+            </span>
+            <img src="image/oxymeter.jpeg.jpeg" alt="0">
+        </div>
+    </section>
+
+    <!-- ICONS SECTION -->
+
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fas fa-plane"></i>
+            <h3>free shipping</h3>
+            <p>order over rs.1000</p>
+        </div>
+        <div class="icons">
+            <i class="fas fa-lock"></i>
+            <h3>secure payment</h3>
+            <p>100% security </p>
+        </div>
+        <div class="icons">
+            <i class="fas fa-redo-alt"></i>
+            <h3>easy placements</h3>
+            <p>7days replacement policy</p>
+        </div>
+        <div class="icons">
+            <i class="fas fa-headset"></i>
+            <h3>24/7 support</h3>
+            <p>call us anytime!</p>
+        </div>
+    </section>
+
+    <!-- FEATURED SECTION -->
+
+    <section class="featured" id="featured">
+
+        <h1 class="heading"><span>OUR SPECILITIES</span></h1>
+
+        <div class="swiper featured-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a id="eye1" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                       <a href="#"> <img src="image/COVID.jpeg.jpeg" alt=""></a>
+                    </div>
+                    <div class="content">
+                        <h3>COVID CONSULTATION</h3>
+                        <a href="#" class="btn">CALL US</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a id="eye2" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                       <a href="#"> <img src="image/cardiologist.jpeg.jpeg" alt=""></a>
+                    </div>
+                    <div class="content">
+                        <h3>CARDIOLOGIST</h3>
+                        <a href="#" class="btn">CALL US</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a id="eye3" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                       <a href="#"> <img src="image/dentist.jpeg.jpeg" alt=""></a>
+                    </div>
+                    <div class="content">
+                        <h3>DENTIST</h3>
+                        <a href="#" class="btn">CALL US</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a id="eye4" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                       <a href="#"> <img src="image/bone.jpg.jpeg" alt=""></a>
+                    </div>
+                    <div class="content">
+                        <h3>BONES</h3>
+                        <a href="#" class="btn">CALL US</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a id="eye5" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                       <a href="#"> <img src="image/GYNECOLOGIST.jpeg" alt=""></a>
+                    </div>
+                    <div class="content">
+                        <h3>GYNECOLOGIST</h3>
+                        <a href="#" class="btn">CALL US</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a id="eye6" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                       <a href="#"> <img src="image/DERMITOLOGIST.jpeg.jpeg" alt=""></a>
+                    </div>
+                    <div class="content">
+                        <h3>DERMITOLOGIST</h3>
+                        <a href="#" class="btn">CALL US</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a id="eye7" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <a href="#"><img src="image/COUNSELLING.jpeg.jpeg" alt=""></a>
+                    </div>
+                    <div class="content">
+                        <h3>COUNSELLING</h3>
+                        <a href="#" class="btn">CALL US</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a id="eye8" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <a href="#"><img src="image/THERAPY.jpeg" alt=""></a>
+                    </div>
+                    <div class="content">
+                        <h3>THERAPY</h3>
+                        <a href="#" class="btn">CALL US</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a id="eye9" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <a href="#"><img src="image/CHILD SPECIALIST.jpeg.jpeg" alt=""></a>
+                    </div>
+                    <div class="content">
+                        <h3>CHILD SPECIALIST</h3>
+                        <a href="#" class="btn">CALL US</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a id="eye10" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <a href="#"><img src="image/FAMILY.jpeg.jpeg" alt=""></a>
+                    </div>
+                    <div class="content">
+                        <h3>FAMILY PHYSICIAN</h3>
+                        <a href="#" class="btn">CALL US</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+
+    <section class="newsletter">
+
+        <form action="">
+
+            <h3>subscribe for more updates</h3>
+            <input type="email" name="" placeholder="Enter your email id" id="" class="box">
+            <input type="submit" value="subscribe" class="btn">
+
+        </form>
+
+    </section>
+
+    <!-- ARRIVALS SECTION -->
+
+    <section class="arrivals" id="arrivals">
+
+        <h3 class="heading"><span>MEDICINES</span></h3>
+
+        <div class="swiper arrivals-slider">
+
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="image/paracetamol.jpeg.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>PARACETAMOL</h3>
+                        <div class="price">Rs. 79.99<span>Rs. 99.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="image/eye-drop.png.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>EYE DROP</h3>
+                        <div class="price">Rs. 79.99<span>Rs. 99.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="image/injection.png.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>INJECTION</h3>
+                        <div class="price">Rs. 79.99<span>Rs. 99.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="image/vitamins.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>VITAMINS</h3>
+                        <div class="price">Rs. 79.99<span>Rs. 99.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="image/inhaler-1.jpeg.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>INHALERS</h3>
+                        <div class="price">Rs. 79.99<span>Rs. 99.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="swiper arrivals-slider">
+
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="image/paracetamol.jpeg.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>PARACETAMOL</h3>
+                        <div class="price">Rs. 79.99<span>Rs. 99.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="image/eye-drop.png.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>EYE DROP</h3>
+                        <div class="price">Rs. 79.99<span>Rs. 99.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="image/vitamins.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>VITAMINS</h3>
+                        <div class="price">Rs. 79.99<span>Rs. 99.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="image/injection.png.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>INJECTION</h3>
+                        <div class="price">Rs. 79.99<span>Rs. 99.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="image/inhaler-1.jpeg.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>INHALERS</h3>
+                        <div class="price">Rs. 79.99<span>Rs. 99.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- DEALS SECTION -->
+
+    <section class="deal">
+
+        <div class="content">
+            <h3>deal of the day!</h3>
+            <h1>upto 70% off</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea provident reiciendis, obcaecati aliquam natus
+                recusandae vero quas enim sapiente sint! Quos necessitatibus ipsa nemo incidunt?</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="image">
+            <img src="deal.jpg" alt="">
+        </div>
+
+    </section>
+
+    <!-- REVIEWS SECTION -->
+
+    <section class="reviews" id="reviews">
+
+        <h1 class="heading"><span>client's reviews</span></h1>
+
+        <div class="swiper reviews-slider">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="clients/client-2.jfif" alt="">
+                    <h3>SAHIL VERMA</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa minus provident illo incidunt ea!
+                        Eum non temporibus nulla nam ex!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="clients/client-3.jfif" alt="">
+                    <h3>TUSHAR GUPTA</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa minus provident illo incidunt ea!
+                        Eum non temporibus nulla nam ex!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="clients/client-4.jfif" alt="">
+                    <h3>ANISH KUMAR</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa minus provident illo incidunt ea!
+                        Eum non temporibus nulla nam ex!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="clients/client-1.jfif" alt="">
+                    <h3>TANYA OBEROI</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa minus provident illo incidunt ea!
+                        Eum non temporibus nulla nam ex!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="clients/client-1.jfif" alt="">
+                    <h3>SAKSHI GUPTA</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa minus provident illo incidunt ea!
+                        Eum non temporibus nulla nam ex!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="clients/client-1.jfif" alt="">
+                    <h3>SAKSHI GUPTA</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa minus provident illo incidunt ea!
+                        Eum non temporibus nulla nam ex!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="clients/client-1.jfif" alt="">
+                    <h3>SAKSHI GUPTA</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa minus provident illo incidunt ea!
+                        Eum non temporibus nulla nam ex!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="clients/client-5.jfif" alt="">
+                    <h3>SACHIN MAHORE</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa minus provident illo incidunt ea!
+                        Eum non temporibus nulla nam ex!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- BLOGS SECTION -->
+
+    <section class="blogs" id="blogs">
+
+        <h1 class="heading"><span>our blogs</span></h1>
+
+        <div class="swiper blogs-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="blogs/blog_11.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>blog title goes here</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, voluptate!</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="blogs/blog_2.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>blog title goes here</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, voluptate!</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="blogs/blog_3.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>blog title goes here</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, voluptate!</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="blogs/blog_4.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>blog title goes here</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, voluptate!</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="blogs/blog_11.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>blog title goes here</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, voluptate!</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="blogs/blog_3.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>blog title goes here</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, voluptate!</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER SECTION  -->
+
+    <section class="footer" id="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>our location</h3>
+                <a href=""><i class="fas fa-map-marker-alt"></i>MADHYA PRADESH</a>
+                <a href=""><i class="fas fa-map-marker-alt"></i>UTTAR PRADESH</a>
+                <a href=""><i class="fas fa-map-marker-alt"></i>J$K</a>
+                <a href=""><i class="fas fa-map-marker-alt"></i>NEPAL</a>
+                <a href=""><i class="fas fa-map-marker-alt"></i>GUJRAT</a>
+                <a href=""><i class="fas fa-map-marker-alt"></i>GOA</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"><i class="fas fa-arrow-right"></i>home</a>
+                <a href="#featured"><i class="fas fa-arrow-right"></i>featured</a>
+                <a href="#arrivals"><i class="fas fa-arrow-right"></i>arrivals</a>
+                <a href="#reviews"><i class="fas fa-arrow-right"></i>reviews</a>
+                <a href="#blogs"><i class="fas fa-arrow-right"></i>blogs</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href=""><i class="fas fa-arrow-right"></i>account info</a>
+                <a href=""><i class="fas fa-arrow-right"></i>ordered items</a>
+                <a href=""><i class="fas fa-arrow-right"></i>privacy policy</a>
+                <a href=""><i class="fas fa-arrow-right"></i>payment methods</a>
+                <a href=""><i class="fas fa-arrow-right"></i>our services</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href=""><i class="fas fa-phone"></i>+91 1234567890</a>
+                <a href=""><i class="fas fa-phone"></i>+91 0987654321</a>
+                <a href=""><i class="fas fa-envelope"></i>abc@gmail.com</a>
+                <img src="world-map.jpg" class="map" alt="">
+            </div>
+        </div>
+
+        <div class="share">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/login" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <div class="credit">
+            created by <span>PILLPALACE</span> all right reserved!
+        </div>
+    </section>
+
+    <!-- LOADER SECTION -->
+
+    <div class="loader-container">
+        <img src="Loader.gif" alt="">
+    </div>
+
+
+
+<ul id="myUL">
+    <li><a href="#">POSITIVE THOUGHTS</a></li>
+    <li><a href="#">THE GOLDFINCH : DONNA TARTT</a></li>
+    <li><a href="#">THE DREAMING ARTS : TOM MALONEY</a></li>
+    <li><a href="#">TOM And JERRY :WILLIAM HANNA</a></li>
+    <li><a href="#">HARRY POTTER : J.K.ROWLING</a></li>
+    <li><a href="#">THE FROST EATER</a></li>
+    <li><a href="#">THE IMPERFECTION OF MEMORY</a></li>
+    <li><a href="#">SIN EATER</a></li>
+    <li><a href="#">NO PLACE LIKE HERE : CHRISTINA JUNE</a></li>
+    <li><a href="#">THE GIRL IN RED : CHRISTINA HENRY</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="site.js"></script>
+</body>
+
+</html>
